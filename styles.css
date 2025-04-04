@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #eae0c8;
@@ -15,8 +16,36 @@ body {
     font-size: 36px;
     margin: 10px 0;
 }
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navbar Styles */
+.hamburger {
+    display: block;
+    background-color: #002f6c;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
 .navbar {
-    display: none; /* Hide the navbar for mobile */
+    display: none; /* Hidden by default */
     flex-direction: column;
     background-color: #001a3d;
     position: fixed;
@@ -38,51 +67,12 @@ body {
 .navbar a:hover {
     background-color: #002f6c;
 }
-.hamburger {
-    display: block;
-    background-color: #002f6c;
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-}
 .navbar.active {
+    display: flex;
     transform: translateX(0);
 }
-.container {
-    text-align: center;
-    padding: 50px 20px;
-}
-.cta-button {
-    background-color: #002f6c;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.cta-button:hover {
-    background-color: #001a3d;
-}
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
-.footer {
-    background-color: #002f6c;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
+/* Responsive Design */
 @media (min-width: 768px) {
     .hamburger {
         display: none;
